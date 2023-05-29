@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <meta http-equiv="refresh" content="">
@@ -14,43 +17,38 @@
   <link rel="icon" href="./images/android-chrome-192x192.png" sizes="192x192" />
   <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
   <style>
-.home-bg{
+  .home-bg{
   background-image: url('./images/image6.jpeg');
   background-position: absolute;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 }
-.mySlides {display: none;}
+.mySlides {display: ;}
   </style>
 </head>
-
 <body>
-<!--Site Header-->
-<div class="header">
-  <a href="#default" class="logo"><img src="./images/logo.png" width="50px;"></a>
-  <div class="header-right">
-    <a class="active" href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#team">Team</a>
-    <a href="#schedule">Schedule</a>
-    <a href="#contact">Contact Us</a>
-  </div>
-  <a id="hamburger-icon" href="javascript:void(0)" onclick="toggleMobileMenu()">&#9776;</a>
-</div>
-
-<!--Mobile Menu-->
-<div id="mobile" class="menu">
-  <ul class="mobile-menu">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#team">Team</a>
-    <a href="#schedule">Schedule</a>
-    <a href="#contact">Contact Us</a>
-  </ul>
-</div>
-
-
-<!--Content Begins-->
+    <!-- Navigation bar -->
+    <header class="header">
+        <!-- Logo -->
+        <a href="#" class="logo"><img src="./images/logo.png" width="65px"></a>
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <!-- Menu -->
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#recent">Gallery</a> </li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main content -->
+    <main>
+      <!--Content Begins-->
 <!--introduction section-->
   <section id="home" class="home-bg">
     <div class="container">
@@ -60,16 +58,18 @@
     </div>
   </section>
 
-<!--About Us section-->
-  <section id="about">
+        <!--About Us section-->
+  <div id="about">
     <div class="container">
       <h2>About Us</h2>
-      <p>The Kyambogo University Rugby Club is a thriving sports club dedicated to promoting the sport of rugby among students. We provide a platform for students to learn and play rugby in a competitive yet friendly environment. Our club focuses on developing skills, teamwork, and sportsmanship.</p>
+      <p>At Kyambogo University Rugby Club, we pride ourselves on fostering a culture of teamwork, discipline, and personal growth. Our dedicated coaches and experienced players are dedicated to nurturing talent and promoting the values of rugby both on and off the field.<br>We provide a platform for individuals with a passion for rugby to come together, hone their skills, and compete at various levels of the sport.
+      <br>As a member of the club, you will have access to top-notch training facilities and resources that will enable you to develop your rugby abilities to their fullest potential. Whether you are a beginner looking to learn the basics or an experienced player seeking to take your game to the next level, our club offers a supportive and inclusive environment for players of all skill levels.</p>
       <p>Join us today and experience the thrill of rugby!</p>
     </div>
-  </section>
-<!--Team Begins-->
-  <section id="team">
+  </div>
+
+        <!--Team Begins-->
+  <div id="team">
     <div class="container">
       <h2>Our Team</h2>
       <div class="team-members">
@@ -90,26 +90,25 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <!--Gallery Begins-->
+  </div>
+   <!--Gallery Begins-->
   <section id="recent">
       <h2 style="font-size: 25px; font-weight: bold;">RECENT TOURNAMENT</h2><br>
     <!-- Left and right controls -->
     <div class="slideshow-container">
 
     <div class="mySlides fade">
-      <img src="./images/recent1.jpeg" style="width:100%" height="500">
+      <img src="./images/recent1.jpeg" alt="recent1">
       <div class="text">Courtesy: https://twitter.com/@KyambogoRugby</div>
     </div>
 
     <div class="mySlides fade">
-      <img src="./images/recent2.jpeg" style="width:100%" height="500">
+      <img src="./images/recent2.jpeg" alt="recent2">
       <div class="text">Courtesy: https://twitter.com/@KyambogoRugby</div>
     </div>
 
     <div class="mySlides fade">
-      <img src="./images/recent3.jpeg" style="width:100%" height="500">
+      <img src="./images/recent3.jpeg" alt="recent3">
       <div class="text">Courtesy: https://twitter.com/@KyambogoRugby</div>
     </div>
 
@@ -123,8 +122,9 @@
 
   </section>
 
-<!--Club Schedule Begins-->
-  <section id="schedule">
+
+        <!--Club Schedule Begins-->
+  <div id="schedule">
     <div class="container">
       <h2 style="text-align: center;">Match Schedule</h2>
       <table>
@@ -150,49 +150,38 @@
         </tr>
       </table>
     </div>
-  </section>
-<!--Contact section Begins-->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>If you have any questions or would like to join our club, please fill out the form below and we will get back to you as soon as possible.</p><br>
-      <form method="POST" action="" target="_self">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="10" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-      <?php
-      // check if the form input is empty
-      if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])) {
-      $name = $_POST['name'];
-      $email = $_POST['email'];
-      $message = $_POST['message'];
-      echo "Thank you for contacting us, we well get intouch we you shortly.";
-        }
-      ?>
-    </div>
-  </section>
-<!--Content Begins-->
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 Kyambogo University Rugby Club. All rights reserved.</p>
-    </div>
-    <a href="#" style="float: right;font-size: 20px; color: white; font-weight: bold;">Up</a>
-  </footer>
+  </div>
 
+        <!--Contact Us Section-->
+      <div id="contact" class="c_container">
+        <h2>Contact Us</h2>
+        <p style="margin-bottom: 25px;">If you have any questions or would like to join our club, please fill out the form below and we will get back to you as soon as possible.</p>
+      <form action="/action_page.php">
+        <label for="fname">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name..">
+
+        <label for="email">Email</label>
+        <input type="email" id="name" name="email" placeholder="Your email..">
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="message" placeholder="Write something.." style="height:150px"></textarea>
+        <div style="text-align: center;">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+    </main>
+
+
+<!-- Site footer -->
+<footer class="footer">
+    <div class="footer-content">
+      &copy; 2023 Kyambogo University Rugby Club<br>
+      All Rights Reserved<br>
+      &middot; Powered By Christopher A Titus
+   </div>
+</footer>
 </body>
-<!--script section-->
-<script>
-function toggleMobileMenu() {
-  var x = document.getElementById("mobile");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
+<!--Scripts-->
 <script>
       //Recent Carousel slides
     let slideIndex = 0;
@@ -205,9 +194,9 @@ function toggleMobileMenu() {
         slides[i].style.display = "none";  
       }
       slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}    
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+      if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
       }
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " active";
