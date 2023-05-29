@@ -1,25 +1,217 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>Kyambogo University Rugby Club</title>
-<style>
-body{
-background-color: #EEEEEE;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta http-equiv="refresh" content="">
+  <title>Kyambogo University Rugby Club</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="./images/favicon-32x32.ico" sizes="32x32" />
+  <link rel="icon" href="./images/android-chrome-192x192.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
+  <style>
+.home-bg{
+  background-image: url('./images/image6.jpeg');
+  background-position: absolute;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
-h1{
-  padding-top: 5rem;
-font-size: 220%;
-color: blue;
-}
-h4{
-font-size: 120%;
-color: skyblue;
-}
-</style>
+.mySlides {display: none;}
+  </style>
 </head>
+
 <body>
-<div style="text-align:center;">
-<h1>Kyambogo University Rugby Club</h1>
-<h4>Comming Soon...</h4>
+<!--Site Header-->
+<div class="header">
+  <a href="#default" class="logo"><img src="./images/logo.png" width="50px;"></a>
+  <div class="header-right">
+    <a class="active" href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#team">Team</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#contact">Contact Us</a>
+  </div>
+  <a id="hamburger-icon" href="javascript:void(0)" onclick="toggleMobileMenu()">&#9776;</a>
 </div>
+
+<!--Mobile Menu-->
+<div id="mobile" class="menu">
+  <ul class="mobile-menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#team">Team</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#contact">Contact Us</a>
+  </ul>
+</div>
+
+
+<!--Content Begins-->
+<!--introduction section-->
+  <section id="home" class="home-bg">
+    <div class="container">
+      <h1>Kyambogo University Rugby Club</h1>
+      <p>Welcome to the official website of the Kyambogo University Rugby Club! Join us and be a part of our winning team.</p>
+      <a href="#contact" class="btn">Join Now</a>
+    </div>
+  </section>
+
+<!--About Us section-->
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>The Kyambogo University Rugby Club is a thriving sports club dedicated to promoting the sport of rugby among students. We provide a platform for students to learn and play rugby in a competitive yet friendly environment. Our club focuses on developing skills, teamwork, and sportsmanship.</p>
+      <p>Join us today and experience the thrill of rugby!</p>
+    </div>
+  </section>
+<!--Team Begins-->
+  <section id="team">
+    <div class="container">
+      <h2>Our Team</h2>
+      <div class="team-members">
+        <div class="team-member">
+          <img src="./images/profile.jpg" alt="Player 1">
+          <h3>Ogwg Joshua</h3>
+          <p>Director of Rugby</p>
+        </div>
+        <div class="team-member">
+          <img src="./images/profile.jpg" alt="Player 2">
+          <h3>Cris Kaganz</h3>
+          <p>Coach</p>
+        </div>
+        <div class="team-member">
+          <img src="./images/profile.jpg" alt="Player 3">
+          <h3>Zmie Kamp</h3>
+          <p>Media</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Gallery Begins-->
+  <section id="recent">
+      <h2 style="font-size: 25px; font-weight: bold;">RECENT TOURNAMENT</h2><br>
+    <!-- Left and right controls -->
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="./images/recent1.jpeg" style="width:100%" height="500">
+      <div class="text">Courtesy: https://twitter.com/@KyambogoRugby</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="./images/recent2.jpeg" style="width:100%" height="500">
+      <div class="text">Courtesy: https://twitter.com/@KyambogoRugby</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="./images/recent3.jpeg" style="width:100%" height="500">
+      <div class="text">Courtesy: https://twitter.com/@KyambogoRugby</div>
+    </div>
+
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+  </section>
+
+<!--Club Schedule Begins-->
+  <section id="schedule">
+    <div class="container">
+      <h2 style="text-align: center;">Match Schedule</h2>
+      <table>
+        <tr>
+          <th>Date</th>
+          <th>Opponent</th>
+          <th>Venue</th>
+        </tr>
+        <tr>
+          <td>June 1, 2023</td>
+          <td>University of Kampala</td>
+          <td>Kyambogo Stadium</td>
+        </tr>
+        <tr>
+          <td>June 8, 2023</td>
+          <td>Makerere University</td>
+          <td>Makerere Stadium</td>
+        </tr>
+         <tr>
+          <td>June 15, 2023</td>
+          <td>Uganda Christain University</td>
+          <td>Pearl Stadium</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+<!--Contact section Begins-->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or would like to join our club, please fill out the form below and we will get back to you as soon as possible.</p><br>
+      <form method="POST" action="" target="_self">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="10" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <?php
+      // check if the form input is empty
+      if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])) {
+      $name = $_POST['name'];
+      $email = $_POST['email'];
+      $message = $_POST['message'];
+      echo "Thank you for contacting us, we well get intouch we you shortly.";
+        }
+      ?>
+    </div>
+  </section>
+<!--Content Begins-->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Kyambogo University Rugby Club. All rights reserved.</p>
+    </div>
+    <a href="#" style="float: right;font-size: 20px; color: white; font-weight: bold;">Up</a>
+  </footer>
+
 </body>
+<!--script section-->
+<script>
+function toggleMobileMenu() {
+  var x = document.getElementById("mobile");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<script>
+      //Recent Carousel slides
+    let slideIndex = 0;
+    showSlides();
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2200); // Change image every 2 seconds
+    }
+</script>
 </html>
