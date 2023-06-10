@@ -18,7 +18,7 @@
  <p>To get started with the Rugby Website, simply visit our homepage at [Kyambogo University Rugby Club](https://krisatitus.github.io/rugby/).  From there, you can navigate through different sections using the menu at the top of the page.</p>
 
 ### Contributing
- <p>We welcome contributions from the rugby community! If you would like to contribute articles, share match reports, or provide any suggestions or feedback, please contact our team at < contact@rugbywebsite.com >.
+ <p>We welcome contributions from the rugby community! If you would like to contribute articles, share match reports, or provide any suggestions or feedback, please contact our team at contact@rugbywebsite.com .
 
 ### License
 <p>This project is licensed under the MIT License. Feel free to use the code, content, and resources of this website as long as it aligns with the terms of the license.</p>
