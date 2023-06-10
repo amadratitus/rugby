@@ -15,7 +15,7 @@
 6. Community Engagement: We believe in the power of rugby to bring people together. Engage with the rugby community through our forums, social media channels, and special events.
 
 ## Getting Started
- <p>To get started with the Rugby Website, simply visit our homepage at [Kyambogo University Rugby Club](https://krisatitus.github.io/rugby/)
+ <p>To get started with the Rugby Website, simply visit our homepage at ![Kyambogo University Rugby Club](https://krisatitus.github.io/rugby/)
 . From there, you can navigate through different sections using the menu at the top of the page.</p>
 
 ### Contributing
